@@ -1,0 +1,142 @@
+body {
+    background: #333; 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    
+}
+
+header::before {
+    background: url('https://source.unsplash.com/daily') no-repeat center center/cover;
+    content: '';
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+}
+
+h1.main {
+    font-size: 4em;
+    /* to get it up.. */
+    margin-top: -70px;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+/* ul style at the end.. */
+.showcase {
+    background: #fff;
+    height: 40vh;
+}
+
+.myList {
+    background: #000;
+    text-align: center;
+    padding: 2rem;
+}
+
+.myList li {
+    padding: 2rem;
+    border: 2px solid white;
+}
+
+.myList li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 2rem;
+}
+
+.myList li a:hover {
+    color: #fff;
+    font-size: 2.05rem;    
+}
+
+/* 01 GRID COLUMNS */
+.btn {
+    margin: 20px;
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+    background: #09b109;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: #066e06;
+    cursor: pointer;
+}
+
+button a {
+    color:#333;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid #00ccff;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.item {
+    padding: 3rem;
+    border: 1px solid #ccc;
+    background: #f4f4f4;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#grid1 {
+    display: grid;
+    grid-template-columns: auto;    
+}
+
+#grid2 {
+    display: grid;
+    /* grid-template-columns: auto auto auto;     */
+    grid-template-columns: repeat(3, auto);    
+}
+
+#grid3 {
+    display: grid;
+    grid-template-columns: auto 2fr auto;    
+}
+
+#grid4 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; 
+    /* Instead of margin, we can use  GRID-GAP*/
+    grid-gap: 1rem;
+}
+
+
+/* MAIN AND ASIDE */
+#grid5 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem;
+}
+
+/* 50 % - 50 % */
+#grid6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    grid-gap: 1rem;
+}
+
+/* GRID TEMPLATE ROWS */
+
+
