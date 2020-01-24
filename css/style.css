@@ -188,3 +188,14 @@ hr {
     grid-column: 2 / span 3;
     grid-row: 4 / span 2;
 }
+
+/* GRID MIN MAX */
+#grid_min_max {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#grid_min_max1 {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
