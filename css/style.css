@@ -199,3 +199,8 @@ hr {
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+/* GRID AREAS */
+#grid_areas {
+    
+}
